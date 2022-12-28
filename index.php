@@ -1,0 +1,147 @@
+<?php
+
+    if(isset($_POST['submit']))
+{
+    include_once('config.php');
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+
+    $sql = $pdo->prepare("INSERT INTO usuarios(nome,email,mensagem) VALUES ('$nome','$email','$telefone')");
+    $sql->execute();
+   
+}
+
+
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ652W16R2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VQ652W16R2');
+</script>
+
+    <title>Projeto1</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <meta charset="utf-8" /> 
+
+    
+</head>
+
+<body>
+    <div class="header">
+        <div class="center">
+            <img src="images/logo1.png" />
+            
+        </div><!--center-->
+    </div><!--header-->
+    
+    <div class="container-banner">
+        <div class="center">
+            <div class="container-list">
+                <ul>
+                    <li>Conhecimento em desenvolvimento WEB (HTML, CSS, JAVASCRIPT E PHP).</li>
+                    <li>Experiência em manutenção e criação de sites em wordpress com elementor.</li>
+                    <li>Conhecimento de WEB Designer, experiência com criação de layouts.</li>
+                    <li>Experiência com DART, FLUTTER, FIREBASE.</li>
+                </ul>
+
+            </div><!--container-list-->
+            <div class="form" >
+                <h2>Preencha o formulário</h2>
+                <form action="index.php" method="POST">
+                    <div class="input-container">
+                        <span>Nome*</span>
+                        <input type="text" id="nome" name="nome" required />
+                    </div><!--input-container-->
+
+                    <div class="input-container">
+                        <span>E-mail*</span>
+                        <input type="text" id="email" name="email" required />
+                    </div><!--input-container-->
+
+                    <div class="input-container">
+                        <span>Telefone*</span>
+                        <input type="text" name="telefone" required />
+                    </div><!--input-container-->
+
+                    <p class="warning">*Campos Obrigatórios</p>
+                
+                
+                <div class="input-submit-container">
+                    <input type="submit" name="submit" value="enviar" id="submit" >
+
+                        <script>
+                            function minhaFuncao(){
+                                alert("Você entrou em contato comigo :D");
+
+                            }
+                            
+
+                        </script>
+
+
+                </div><!--input-submit-container-->
+            </div><!--form-->
+            <div class="clear"></div>
+        </div><!--center-->
+
+    </div><!--container-banner-->
+
+    <div class="container-2">
+        <div class="center">
+        <h2>Procuro vaga de Desenvolvedor WEB</h2>
+        <p>Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+            Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+            Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+            Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+            Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+        </p>
+        
+    </div><!--center-->
+
+    <div class="arrow">
+        <img src="images/codigo.png" alt="">
+    </div><!--arrow-->
+    <button><a href="https://api.whatsapp.com/send?phone=5561999669928&text=Ol%C3%A1%20quero%20entrar%20em%20contato" target="_blank">Fale comigo agora Mesmo</a> </button>
+    </div><!--container2-->
+
+    <div class="container-3">
+        <div class="item-1 item">
+            <h2>Flutter</h2>
+             <h6>Experiência com criação de aplicativos</h6>
+        </div>
+
+        <div class="item-2 item">
+            <h2>Designer</h2>
+            <h6>Experiência com criação de Layouts,
+                 com photoshop, figma entre outros</h6>
+        </div>
+
+        <div class="item-3 item">
+            <h2>Wordpress</h2>
+            <h6>Manutenção ou criação de 
+                site Wordpress</h6>
+        </div>
+    </div><!---container3-->
+
+        
+
+    
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    
+</body>
+</html>

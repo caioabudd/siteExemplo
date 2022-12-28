@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nova Fonte";
+
+}
+
+html,body{
+height: 100%;
+
+}
+
+@font-face {
+    font-family: "Nova Fonte";
+    src: url(../fonts/LEMONMILK-Bold.otf);
+}
+
+.center{
+    width: 100%;
+    margin: 0 auto;
+    
+
+}
+
+.header{
+    width: 100%;
+    padding: 0 2%;
+    height: 60px;
+    background-color: rgb(52, 9, 121);
+}
+
+.header img {
+    width: 200px;
+    margin: -25px;
+    margin-left: 200px;
+    
+}
+
+.container-banner{
+    width: 100%;
+    padding: 0 2%;
+    height: 557px;
+    background-image: url(../images/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-banner > .center{
+    height: 100%;
+    
+}
+
+.form{
+    margin-right: 80px;
+    padding: 10px;
+    width: 400px;
+    height: calc(100% + 30px);
+    float: right;
+    position: relative;
+    top: -15px;
+    border: 8px solid rgba(120, 120, 120, 0.5);
+    background-color: rgb(250, 249, 249);
+    background-clip: padding-box;
+
+}
+
+.form h2 {
+    font-weight: normal;
+    color: #999999;
+    font-size: 20px;
+
+}
+
+.input-container{
+    margin-top: 20px;
+}
+
+.input-container span,.form p{
+    display: inline-block;
+    width: 100%;
+    color:#bbb ;
+    font-size: 17px;
+}
+
+.form p {
+    margin: 20px 0;
+
+}
+
+.input-container input[type=text]{
+    margin-top: 8px;
+    width: 344px;
+    height: 55px;
+    border: 1px solid #ccc;
+}
+
+.form .input-submit-container{
+    text-align: center;
+
+}
+
+.form input[type=submit]{
+    color: white;
+    width: 280px;
+    height: 56px;
+    display: inline-block;
+    background-color: #363A6D;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    cursor: pointer;
+    border-bottom: 5px solid #4A5097;
+}
+
+.form input[type=submit]:hover{
+    background: #323665;
+
+}
+
+.container-list{
+    margin-left: 240px;
+    padding: 25px;
+    margin-top: 40px;
+    float: left;
+    width: 619px;
+    height: 300px;
+    background-color: rgb(33, 35, 67,0.7); 
+    border-radius: 22px;
+}
+
+.container-list ul{
+    list-style-type: inside;
+    margin-left: 25px;
+
+
+}
+
+.container-list ul li{
+    margin-top: 18px;
+    color: white;
+
+}
+
+.container-2{
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgba(200, 200, 200, 0.76);
+    text-align: center;
+
+}
+
+.container-2 h2{
+    font-weight: normal;
+}
+
+.container-2 p{
+    width: 698px;
+    margin:15px 0;
+    display: inline-block;
+    text-align: justify;
+}
+
+.arrow > img{
+    width: 64px;
+    height: 64px;
+    
+
+}
+
+button{
+    border: none;
+    background-color: #4A5097;
+    color: white;
+    text-align: justify;
+    height: 45px;
+    width: 255px;
+    padding-left: 15px;
+}
+
+
+.container-2 a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+@media screen and (max-width: 1024px){
+    .form{
+        display: inline-block;
+        position: relative;
+        padding: 20px 2%;
+        width: 35%;
+        justify-items: center;
+        
+    }
+
+    .container-banner{
+        width: 100%;
+        display: inline-block;
+    }
+
+    .container-list{
+        margin-left: 0px;
+        padding: 25px;
+        margin-top: 40px;
+        padding: 20px 2%;
+        width: 500px;
+        height: 250px;
+        background-color: rgb(33, 35, 67,0.7); 
+        border-radius: 22px;
+        display: inline-block;
+        
+    }
+
+    .form input[type=text]{
+        width: 100%;
+    }
+
+    .container-2 h2{
+        display: block;
+        margin-top: 350px;
+    }
+    .container-2 p {
+        display: block;
+        max-width: 100%;
+        margin-left: 150px;
+    }
+
+}
+
+@media screen and (max-width: 1430px){
+    .form{
+        display: inline-block;
+        position: relative;
+        width: 35%;
+        justify-items: center;
+        
+    }
+
+    .form input[type=text]{
+        width: 90%;
+    }
+
+    .form input[type=submit]{
+            width: 90%;
+    }
+    .container-list{
+        margin-left: 0px;
+        padding: 25px;
+        margin-top: 40px;
+        padding: 20px 2%;
+        width: 500px;
+        height: 250px;
+        background-color: rgb(33, 35, 67,0.7); 
+        border-radius: 22px;
+        display: inline-block;
+        
+    }
+
+    .item-1 {
+        margin-left: 255px ; 
+        position: relative;
+        display: inline-block;
+    }
+
+    
+    
+
+    
+
+}
+
+
+
+
+@media screen and (max-width: 700px){
+    .container-banner{
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .container-list{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .form {
+        
+        display: inline-block;
+        width: 66%;
+        
+    }
+
+    .header img {
+        margin-left: 200px;
+    }
+
+    .container-2 p {
+        display: block;
+        max-width: 50%;
+      
+    }
+
+    .form input[type=submit]{
+        width: 50%;
+    }
+
+    .item-3 {
+        margin-left: 125px;   
+    }
+
+    .item-1 {
+        margin-left: 0%;   
+    }
+
+   
+   
+    
+    
+}
+
+.container-3{
+    padding-top: 2%;
+    height: 250px;
+    width: 100%;
+    display: inline-block;
+}
+
+
+
+.item{
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 65px;
+    transition: 1s;
+    position: relative;
+    padding-left: 0px 2%;
+    
+}
+
+.item:hover{
+    background-color: black;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 75px;
+    color: white;
+   
+    
+}
+
+.item-1 {
+    margin-left: 18% ; 
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    
+}
+
+.item-1 h6{
+    margin-left: 10px; 
+    
+    
+}
+
+
+.item-1 h2{
+    margin-left: 90px;   
+}
+
+.item-2 h2{
+    margin-left: 185px;   
+}
+
+.item-2 h6{
+    margin-left: 10px;   
+}
+
+.item-2{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 520px;
+}
+
+.item-3 h2{
+    margin-left: 85px;   
+    
+}
+
+.item-3 h6{
+    width: 320px;   
+    margin-left: 20px;
+    
+}
+
+
+@media screen and (max-width: 1484px){
+    .item-1 {
+        margin-left: 8% ; 
+        position: relative;
+        display: inline-block;
+    }
+
+    
+    
+
+    
+
+}
+
+
+
+
